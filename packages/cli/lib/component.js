@@ -43,10 +43,7 @@ function compile(meta, targetPath, templatePath) {
   // 创建文件
   const content = fs.readFileSync(templatePath).toString()
   const result = handlebars.compile(content)(meta)
-  console.log(targetPath);
-  console.log();
   if (!fs.existsSync(dirname(targetPath))) {
-    warning('tst')
     fs.mkdirSync(dirname(targetPath))
   }
   fs.writeFileSync(targetPath, result)
