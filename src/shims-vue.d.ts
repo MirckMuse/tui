@@ -1,5 +1,7 @@
 declare module '*.vue' {
-  import { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, any>
+  import {defineComponent, App} from 'vue'
+  const component: ReturnType<typeof defineComponent> & {
+    install(app: App): void
+  }
   export default component
 }

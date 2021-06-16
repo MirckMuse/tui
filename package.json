@@ -7,7 +7,9 @@
     "serve": "vite preview",
     "prepare": "husky install"
   },
+  "author": "MirckMuse <mirckzhang@126.com>",
   "dependencies": {
+    "tailwindcss": "^2.1.4",
     "vue": "^3.0.5"
   },
   "devDependencies": {
@@ -28,10 +30,17 @@
     "vue-tsc": "^0.0.24"
   },
   "name": "t-ui",
+  "short-name": "t",
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "files": [
+    "generators"
+  ],
+  "workspaces": [
+    "packages/*"
+  ]
 }
