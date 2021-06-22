@@ -1,11 +1,3 @@
-# `@t-ui/button`
+# `@t-ui/button` 按钮
 
-> TODO: description
-
-## Usage
-
-```
-const $componentName = require('`@t-ui/button`');
-
-// TODO: DEMONSTRATE API
-```
+> 常用的操作按钮
